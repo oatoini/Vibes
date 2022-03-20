@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ff551b;
+    background-image: linear-gradient(180deg, #ff551b 0%, #fc62af 50%, #ff551b 100%);    
+}
+
+
+#contener {
+    width: 1024px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header figure {
+    width: 200px;
+    margin: 1em;  
+    display: flex;
+    justify-content: center; 
+}
+
+header figure img {
+    width: 35%; 
+}
+header nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;  
+}
+
+header nav a {
+    color: white;
+    font-size:x-small;
+    padding: 2em;
+}
+
+i {
+    color: white;
+}
+
+header div h1 {
+    font-size: x-large;
+    font-family: "Gill Sans", sans-serif;
+    margin: 1em 0 0.5em;
+}
+
+header div p {
+    font-family: "Gill Sans", sans-serif;
+    margin: 0.5em 0 1em;
+}
+
+header div button {
+    color: white;
+    background-color: transparent;
+    font-family: "Gill Sans", sans-serif;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+
+span {
+    color: rgb(240, 85, 116);
+}
+
+i {
+    color: rgb(240, 85, 116);
+    font-size: 20px;
+    padding: 0em 0.5em 0.5em 0em;
+}
+
+.type1 {   
+    padding: 3em 13em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home{
+    height: 300px;
+    background-image: url(assets/greece.jpg);
+    background-position:bottom;
+
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.type2 {   
+    padding: 2em 6em;
+    display: flex;
+}
+
+
+#about {
+    background-color: white;
+    text-align: justify;
+    display: flex;
+    align-items: baseline;
+}
+
+
+.type2 div  {
+    flex: 1;
+    margin: 1em;
+}
+
+.type2 div div {
+    margin: 0;
+}
+
+
+.type2 div h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(41, 41, 41);
+    margin: 0.25em 0.25em 0.25em 0em;
+}
+
+.type2 div p {
+    padding: 0.2em 0.2em 0.2em 0em;
+    font-size: small;
+    color: rgb(180, 180, 180);
+}
+
+.type2 .maecenas {
+    font-size:larger;
+    padding: 0.5em 0.5em 0.5em 0em;
+    color: rgb(78, 78, 78);
+}
+
+.type2 .iconandtext {
+    display: flex;
+}
+
+.type2 .cadre {
+    display: flex;
+    border: solid 1px;
+    border-color: rgb(228, 222, 222);
+    margin: 0.5em;
+    padding: 0.2em;
+}
+.type2 .colorful {
+    font-family: "Gill Sans", sans-serif;
+    font-weight: 800;
+    font-size:x-small;
+    color: rgb(92, 91, 91);
+}
+
+.portofolio {
+ 
+}
+
+#gallerie {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+#gallerie div {
+
+}
+
+#gallerie img {
+    width: 100%;
+    height: 100%;
+}
+
+.all {
+    width: 100%;
+    height: 50px;
+}
+
+nav {
+    color:rgb(92, 91, 91);
+    font-size: x-small;
+    font-weight: 
+    font-family: "Gill Sans", sans-serif;
+    background-color: white;
+    padding: 5em 8em 5em;
+}
