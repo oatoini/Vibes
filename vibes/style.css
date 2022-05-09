@@ -10,11 +10,12 @@ body {
 }
 
 
-#contener {
+#container {
     width: 1024px;
     margin: auto;
 }
 
+/*---------------header---------------*/
 header {
     display: flex;
     flex-wrap: wrap;
@@ -36,16 +37,19 @@ header nav {
     align-items: center;
     justify-content: center;
     margin: 1em;  
+    padding: 1em;
+    color: white;
+    background-color: #ff551b;
 }
 
 header nav a {
     color: white;
     font-size:x-small;
+    font-weight: bold;
+    font-family: "Gill Sans", sans-serif;
     padding: 2em;
-}
-
-i {
-    color: white;
+    text-decoration: none;
+    text-shadow: 10px;
 }
 
 header div h1 {
@@ -59,14 +63,21 @@ header div p {
     margin: 0.5em 0 1em;
 }
 
-header div button {
+#burger {
     color: white;
     background-color: transparent;
     font-family: "Gill Sans", sans-serif;
+    border-color: white;
     margin: 0.5em 0;
     padding: 0.5em;
 }
 
+
+/*------------------Section 1--------------------------*/
+
+i {
+    color: white;
+}
 
 span {
     color: rgb(240, 85, 116);
@@ -157,18 +168,17 @@ i {
     color: rgb(92, 91, 91);
 }
 
+/*--------------------Section 2--------------------------*/
+
+/*
 .portofolio {
- 
-}
+ }
+ */
 
 #gallerie {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-}
-
-#gallerie div {
-
 }
 
 #gallerie img {
@@ -177,15 +187,331 @@ i {
 }
 
 .all {
-    width: 100%;
-    height: 50px;
-}
-
-nav {
+    height: 6.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color:rgb(92, 91, 91);
     font-size: x-small;
-    font-weight: 
     font-family: "Gill Sans", sans-serif;
     background-color: white;
     padding: 5em 8em 5em;
+}
+
+.all nav a{
+    color: rgb(176, 169, 169);
+    font-size:x-small;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.all button{
+    padding: 0.25em;
+    border-color: deeppink;
+    color: deeppink;
+}
+
+/*------------------section 3---------------------*/
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    background-color: white;
+    padding: 1em 6em;
+    
+}
+
+.section_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: large;
+    font-family: "Gill Sans", sans-serif;
+}
+
+.dash {
+    width: 4em;
+    margin-top: 0.5em;
+    border-top: 3px solid deeppink;
+}
+
+.profile{
+    width: 5em;
+    height: auto;
+    object-fit: contain;
+}
+
+.testimonial{
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    display: flex;
+}
+
+.testimonial p {
+    margin: 24px;
+}
+
+.italic{
+    font-style: italic;
+    font-size: large;
+}
+
+.small{
+    font-size: smaller;
+}
+
+#separation{
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+}
+
+#on_right{
+    font-style: italic;
+    font-size: large;
+    text-align: end;
+}
+
+.small_middle_text{
+    font-size: smaller;
+}
+
+.testimonials button{
+        padding: 0.25em;
+        border-color: deeppink;
+        color: deeppink;
+}
+
+/*-------------------section 4------------------------*/
+
+.new_horizons {
+    padding: 3em 13em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 22em;
+    color: white;
+    background-image: url(assets/stars.gif);
+}
+
+.new_horizons button {
+    color: white;
+    border-color: deeppink;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-family: "Gill Sans", sans-serif;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+/*----------------section 5-----------------------*/
+
+.get_touch{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 6em;
+    background-color: white;
+    text-transform: uppercase;
+}
+
+#grid_1 form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.form_column{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.get_touch button{
+    border-color: rgb(187, 1, 100);
+    background-color: rgb(187, 1, 100);
+    color: white;     
+    width:min-content;
+    padding: 0.5em;
+    text-transform: uppercase;
+}
+.form input {
+    height: 2em;
+    border: none;
+    background-color: #EEEEEE;
+}
+
+.form textarea {
+    height: 6.6em;
+    border: none;
+    background-color: #EEEEEE;
+}
+
+label{
+    padding: 0.5em;
+}
+
+input{
+    padding: 0.5em;
+}
+
+/*-----------------footer---------------------*/
+
+.about_vibes{
+    padding: 1em 6em;
+}
+
+#grid_2{ 
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    color: white;
+    background-color: black;
+}
+
+.dash_small {
+    width: 4em;
+    margin-top: 0.5em;
+    border-top: 3px solid deeppink;
+}
+
+footer p {
+    font-size: smaller;
+} 
+
+footer a {
+    font-size: smaller;
+}
+
+h5 {
+    text-transform: uppercase;
+    margin: 1em 0.2em 0 0;
+}
+
+article{
+    padding: 1em;
+}
+
+article form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+article form input {
+    font-style: italic;
+    height: 2.5em;
+    padding-inline-start: 1em;
+    background-color: rgb(116, 114, 114, 0.5);
+}
+
+article form button {
+    background-color: transparent;
+    border-color: deeppink;
+    color: white;
+}
+
+::placeholder {
+    margin: 0.3em;
+    color: white;
+}
+
+#angle_up {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    border: none;
+    font-size: large;
+    color: lightgray;
+}
+
+#angle_up:hover {
+    color: white;
+}
+
+/*-------------------Footer nav----------------------*/
+
+.buy{
+    padding: 1em 6em;
+}
+
+#footer_nav {
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#footer_nav div {
+    display: flex;
+    gap: 1em;
+}
+
+#footer_nav div a {
+    color: white;
+}
+
+/*------------------responsive---------------------*/
+@media (max-width: 860px) {
+    .large_padding {
+        padding: 3em 6em;
+    }
+
+    .small_padding {
+        padding: 1em 3em;
+    }
+
+    #what_u_get {
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    #nav {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateY(100%);
+        width: 100%;
+        height: fit-content;
+        z-index: 1;
+        background-color: rgba(17, 16, 16, 0.9);
+    }
+
+    #nav ul {
+        flex-direction: column;     
+    }
+
+    #why_container {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .x_large {
+        font-size: large;
+    }
+}
+
+@media (max-width: 430px) {
+    .all {
+        flex-direction: column;
+    }
+
+    #footer_nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
 }

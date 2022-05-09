@@ -14,25 +14,21 @@
     </head>
 
     <body>
-        <div id = "contener"> 
-        
+        <div id = "container">
             <header>
-
                 <figure>
                     <img src = "assets/Vibes.png" alt = "vibes" />
                 </figure>
-
                 <nav>
-                        <a href = "#">HOME</a>
-                        <a href = "#">ABOUT</a>
-                        <a href = "#">PORTOFOLIO</a>
-                        <a href = "#">TESTIMONIALS</a>
-                        <a href = "#">CONTACT</a>
-                        <a href = "#">PAGES</a>
+                        <a href = "HOME">HOME</a>
+                        <a href = "ABOUT">ABOUT</a>
+                        <a href = "PORTOFOLIO">PORTOFOLIO</a>
+                        <a href = "TESTIMONIALS">TESTIMONIALS</a>
+                        <a href = "CONTACT">CONTACT</a>
+                        <a href = "PAGES">PAGES</a>
 
-                        <i class = "fa-solid fa-bars"></i>
+                        <button id="burger"><i class = "fa-solid fa-bars"></i></button>
                 </nav>
-
                 <div class = "type1" id = "home" >
                     <h1>HTML TEMPLATE FOR CREATIVE FOLKS AND DESIGN AGENCIES</h1>
 
@@ -44,63 +40,60 @@
             </header>
     
             <section class = "type2" id = "about" >
-                <div>
-                    <h2>Why Choose Us ?</h2>    
-                    <p class = "maecenas"> Maecanas tempus, tellus eget condimentum rhoncus, 
-                        sem quam semper libero, sit amet.</p>
-                    <p>Nam quam munc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio
-                     et ante tincidunt tempus. Donec vitae <span>sapien ut libero.</span></p>
-                </div>
-                <div>
-                    <h2>What You Get ?</h2>  
-                        <div class="iconandtext">
-                            <i class="fa-brands fa-wordpress"></i>
-                            <div>
-                                <p class = "colorful">COLORFUL & COMPACT</p>
-                                <p>Portofolio WordPress Theme</p>
+                <div id="why_container">
+                    <div>
+                        <h2>Why Choose Us ?</h2>    
+                        <p class = "maecenas"> Maecanas tempus, tellus eget condimentum rhoncus, 
+                            sem quam semper libero, sit amet.</p>
+                        <p>Nam quam munc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio
+                        et ante tincidunt tempus. Donec vitae <span>sapien ut libero.</span></p>
+                    </div>
+                    <div>
+                        <h2>What You Get ?</h2>  
+                            <div class="iconandtext">
+                                <i class="fa-brands fa-wordpress"></i>
+                                <div>
+                                    <p class = "colorful">COLORFUL & COMPACT</p>
+                                    <p>Portofolio WordPress Theme</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="iconandtext">
-                            <i class="fa-solid fa-gear"></i>
-                            <div>
-                                <p class = "colorful">VERY EASY TO USE</p>
-                                <p>Page Builder & Shortcodes</p>
+                            <div class="iconandtext">
+                                <i class="fa-solid fa-gear"></i>
+                                <div>
+                                    <p class = "colorful">VERY EASY TO USE</p>
+                                    <p>Page Builder & Shortcodes</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="iconandtext">
-                            <i class="fa-solid fa-paper-plane"></i>
+                            <div class="iconandtext">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <div>    
+                                    <p class = "colorful">CODED WITH SASS</p>
+                                    <p>Create Custome Skins in Minutes</p>
+                                </div>
+                            </div>
+                    </div>
+                    <div>
+                        <div class="cadre">       
+                            <i class="fa-solid fa-minus"></i>
                             <div>    
-                                <p class = "colorful">CODED WITH SASS</p>
-                                <p>Create Custome Skins in Minutes</p>
+                                <p class = "colorful">NULLA CONSEQUAT MASSA</p>
+                                <p>In enim justo, rhoncus ut, imperdiet a, 
+                                venenatis vitae, justo.</p>
                             </div>
                         </div>
-                </div>
-
-                <div>
-                    <div class="cadre">       
-                        <i class="fa-solid fa-minus"></i>
-                        <div>    
-                            <p class = "colorful">NULLA CONSEQUAT MASSA</p>
-                            <p>In enim justo, rhoncus ut, imperdiet a, 
-                            venenatis vitae, justo.</p>
+                        <div class="cadre">
+                            <i class="fa-solid fa-plus"></i>
+                            <div>    
+                            <p class = "colorful">VIVAMUS ELEMENTUM SEMPER</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="cadre">
-                        <i class="fa-solid fa-plus"></i>
-                        <div>    
-                        <p class = "colorful">VIVAMUS ELEMENTUM SEMPER</p>
-                        </div>
-
-                    </div>
-
-                    <div class="cadre"> 
-                        <i class="fa-solid fa-plus"></i>
-                        <div>
-                        <p class = "colorful">ETIAM ULTRICIES NISI VEL</p>
-                        </div>
+                        <div class="cadre"> 
+                            <i class="fa-solid fa-plus"></i>
+                            <div>
+                            <p class = "colorful">ETIAM ULTRICIES NISI VEL</p>
+                            </div>
+                        </div> 
                     </div> 
-
                 </div>
             </section>
 
@@ -115,14 +108,128 @@
                     <div><img src="assets/templecarre.jpg" alt="templecarre"></div>
                     <div><img src="assets/ishtar.jpg" alt="ishtar"></div>
                 </div>
-                
+                <div class="all">
                     <nav>
                         <a href = "#"><span>ALL</span></a>
                         <a href = "#">AUDIO</a>
                         <a href = "#">IMAGE</a>
                         <a href = "#">VIDEO</a>
                     </nav>
+                <button>LOAD MORE</button>
+                </div> 
             </section>
+
+            <section class="testimonials">
+                <header class="section_header">
+                    <h1>CLIENT TESTIMONIALS</h1>
+                    <div class="dash"></div>
+                </header>
+                <div>
+                    <div class="testimonial">
+                        <img  class="profile" src="assets/profile_icon_1.png">
+                        <div>
+                            <p class="italic">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. 
+                                Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.</p>
+                            <p class="small"><strong>Tommy Mars</strong>, Designer</p>
+                        </div>
+                    </div>
+                    <div class="testimonial" id="separation">
+                        <div id="on_right">
+                            <p class="middle_text">Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. 
+                                Etiam rhoncus.</p>
+                            <p  class="small_middle_text"><strong>Floor Simons</strong>, Designer</p>
+                        </div>
+                        <img class="profile" src="assets/profile_icon_2.png">
+                    </div>
+                    <div class="testimonial">
+                        <img  class="profile" src="assets/profile_icon_3.png">
+                        <div>
+                            <p class="italic">Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget.</p>
+                            <p class="small"><strong>Mick Neil</strong>, Rock Star</p>
+                        </div>
+                    </div>
+                </div>
+                <button>BECOME OUR CLIENT</button>
+            </section>
+
+            <section class="new_horizons">
+                <header class="section_header">
+                    <h1>NEW HORIZONS AWAIT</h1>
+                    <div class="dash"></div>
+                </header>
+                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life. One day however a small line of blind text by the name of Lorem Ipsum decided</p>
+                <button>buy vibes on themeforest</button>
+            </section>
+
+            <section class="get_touch" id="grid_1">
+                <header class="section_header">
+                    <h1>get in touch</h1>
+                    <div class="dash"></div>
+                </header>
+                <form action="submit" class="form">
+                    <div class="form_column">
+                        <div class="form">
+                            <label for="" class="required">your name</label>
+                            <input type="text">
+                        </div>
+                        <div class="form">
+                            <label for="" class="required">your email</label>
+                            <input type="text">
+                        </div>
+                        <div class="form">
+                            <label for="">your phone</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="form_column">
+                        <div class="form">
+                            <label for="">subject</label>
+                            <input type="text">
+                        </div>
+                        <div class="form">
+                            <label for="" class="required">message</label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit">send</button>
+                    </div>
+                </form>
+            </section>  
+            
+            <footer>
+                <section class="about_vibes" id="grid_2">
+                    <article>
+                        <h5>ABOUT VIBES</h5>
+                        <div class="dash_small"></div>
+                        <p>VIBES is an ideal theme for creative folks or design agencies. <strong>Ease of use and top-notech web design techniques</strong> are wrapped with several gorgeous color schemes</p>
+                        <p>You can buy this responsive Wordpress theme on <span class="pink">ThemeForest</span></p>
+                    </article>
+                    <article>
+                        <h5>NEWSLETTER</h5>
+                        <div class="dash_small"></div>
+                        <p><strong>VIBES</strong> contains fully working <strong>Mailchimp</strong> subscribe form.</p>
+                        <form>
+                            <input type="email" placeholder="Your Email Adress">
+                            <button action="submitt">subscribe</button>
+                        </form>
+                    </article>
+                    <article>
+                        <h5>TWITTER FEED</h5>
+                        <div class="dash_small"></div>
+                        <p>&#9724&#9724&#9724&#9724&#9632</p>
+                    </article>
+                    <button id="angle_up"><i class="fa-solid fa-angle-up"></i></button>
+                </section>
+
+                <nav class="buy" id="footer_nav">
+                    <a>Buy this theme on ThemeForest.net</a>
+                    <div>
+                        <a href="">Home</a>
+                        <a href="">Elements</a>
+                        <a href="">Documentation</a>
+                    </div>
+                </nav>
+            </footer>
+        
         </div>
     </body>
 </html>
